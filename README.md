@@ -7,10 +7,7 @@ here to the index of the documentation/diary like so:
 * [code1](code1/README.md)
 * [code2](code2/README.md)
 
-However, these links will only work on the local drive. It doesn't look like
-this can be easily mapped without some scripting. Maybe
-https://docs.github.com/en/github/writing-on-github/autolinked-references-and-urls
-can help?
+As opposed to the submodule method, subtree links do work from online.
 
 The child repos can be developed independently of this one. 
 
@@ -19,4 +16,8 @@ the particular module they are developing.
 
 There doesn't seem to be a way to only include a particular subdirectory
 of one of the submodules in this one.
+
+With git-subtree you'll need to reference the various remote urls directly somewhere.
+Subtree doesn't store these anywhere. Docs recommend storing subtree references
+as remotes. Remotes don't necessarily copy on clone though...
 
